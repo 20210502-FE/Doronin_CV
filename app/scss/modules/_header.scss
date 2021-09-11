@@ -1,0 +1,83 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    &__wrapper {
+        margin: 0 -25px;
+        position: relative;
+    }
+
+    &__inner {
+        padding: 0 25px;
+    }
+
+    &__logo {
+        width: 50px;
+
+        @include respond-to(desktop) {
+            width: 200px;
+        }
+
+        @include respond-to(midle-desktop) {
+            width: 300px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 60px;
+        right: 70px;
+        opacity: 0;
+
+        &_visible {
+            opacity: 1;
+            transition: all 1.5s ease 0s;
+        }
+
+        @include respond-to(tablet-landscape) {
+            position: relative;
+            top: 0;
+            right: 0;
+            opacity: 1;
+        }
+
+        &-item {
+            padding: 5px 0;
+            margin-bottom: 10px;
+
+            @include respond-to(tablet-landscape) {
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__social {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        opacity: 0;
+
+        &_visible {
+            opacity: 1;
+            transition: all 1.5s ease 0s;
+        }
+
+        @include respond-to(tablet-landscape) {
+            position: relative;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            top: 0;
+            right: 0;
+            opacity: 1;
+        }
+
+        &-link {
+            margin-bottom: 10px;
+
+            @include respond-to(tablet-landscape) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(54, 49, 63, 0.384);
+
+    &__wrapper {
+        margin: 0 -25px;
+    }
+
+    &__inner {
+        padding: 0 25px;
+    }
+
+    &__logo {
+        width: 50px;
+
+        @include respond-to(desktop) {
+            width: 200px;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @include respond-to(tablet-landscape) {
+            display: flex;
+        }
+    }
+}
