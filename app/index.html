@@ -6,11 +6,287 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doronin CV</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper flex flex_wrap flex_content-between flex_align-center">
+                <div class="logo header__logo flex">
+                    <a href="/">VD</a>
+                </div>
+                <nav class="nav header__nav">
+                    <ul class="nav__list flex flex_column flex_align-center">
+                        <li class="nav__item header__nav-item"><a class="nav__link" href="#tech-skills">Tech Skills</a>
+                        </li>
+                        <li class="nav__item header__nav-item"><a class="nav__link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav__item header__nav-item"><a class="nav__link" href="#education">Education</a></li>
+                        <li class="nav__item header__nav-item"><a class="nav__link" href="#languages">Languages</a></li>
+                    </ul>
+                </nav>
+                <div class="social header__social flex flex_column flex_wrap">
+                    <a class="social__link header__social-link" href="tel:+380968007509"><img
+                            src="assets/icons/phone-icon.png" alt="phone"></a>
+                    <a class="social__link header__social-link" href="maitto:Doronin04101993@gmail.com"><img
+                            src="assets/icons/email-icon.png" alt="email"></a>
+                    <a class="social__link header__social-link" href="https://www.linkedin.com/in/vova-doronin/"
+                        target="_blank"><img src="assets/icons/linkedin-icon.png" alt="linkedin"></a>
+                    <a class="social__link header__social-link" href="https://github.com/VovaDoronin"
+                        target="_blank"><img src="assets/icons/github-icon.png" alt="github"></a>
+                </div>
+                <button type="button" class="open"><img src="assets/icons/burger-open-icon.png" alt="open"></button>
+                <button type="button" class="close"><img src="assets/icons/burger-close-icon.png" alt="close"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="summary">
+            <div class="wrapper">
+                <div class="summary__wrapper flex flex_wrap flex_content-evenly">
+                    <div class="summary__inner">
+                        <h1 class="title summary__title">Hello, I'm <span>Volodymyr Doronin</span>
+                        </h1>
+                        <h2 class="subtitle summary__subtitle">Trainee Frontend Developer</h2>
+                        <div class="text summary__text">I want to start my career as a frontend developer. I plan to
+                            constantly study to become more qualified and develop in this direction, to do work that
+                            will help people.
+                            <br>As for my personal qualities, I am responsible, persistent, purposeful, I know how to
+                            plan
+                            my work day correctly and as effectively as possible, I always achieve my goals, I am
+                            disciplined and punctual. Stress-resistant, quickly navigate in extreme situations. I have a
+                            mathematical and analytical mind. Sociable, with a sense of humor, I have extensive
+                            experience working in different teams, with people of different ages and social statuses, I
+                            can persuade and motivate others. I have a good memory and high concentration, thanks to
+                            which I easily absorb new information and learn quickly.
+                        </div>
+                        <button class="button summary__button" type="button">Summary</button>
+                    </div>
+                    <div class="summary__inner">
+                        <div class="photo">
+                            <img src="assets/images/photo-image.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tech-skills">
+            <div class="wrapper">
+                <h2 class="subtitle tech-skills__subtitle" id="tech-skills">Tech Skills</h2>
+                <div class="tech-skills__wrapper flex flex_wrap flex_content-evenly">
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-html shadow-html">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-html">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-css shadow-css">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-css">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-scss shadow-scss">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-scss">SCSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-pug shadow-pug">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-pug">PUG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-js shadow-js">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-js">JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-git shadow-git">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-git">GIT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-github shadow-github">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-github">GITHUB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-skills__inner">
+                        <div class="tech-skills__card">
+                            <div class="tech-skills__progressbar">
+                                <svg class="tech-skills__progressbar-svg">
+                                    <circle cx="80" cy="80" r="70" class="circle circle-responsive shadow-responsive">
+                                    </circle>
+                                </svg>
+                                <span class="tech-skills__text shadow-responsive">Responsive web design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experience">
+            <div class="wrapper">
+                <h3 class="subtitle experience__subtitle" id="experience">Experience</h3>
+                <div class="experience__wrapper flex flex_wrap flex_content-evenly">
+                    <div class="experience__inner">
+                        <div class="experience__card anim-items anim-show">
+                            <div class="experience__card-front subtitle flex flex_column">Military service in
+                                the Armed Forces
+                                <p class="subtitle subtitle_mg-top-20">2014-2019</p>
+                            </div>
+                            <div class="experience__card-back flex flex_column">
+                                <div class="experience__text">Military service in the Armed Forces</div>
+                                <div class="experience__text experience__text_small">Position: Deputy Commander of the
+                                    Artillery Battalion. Rank – Captain</div>
+                                <ul class="experience__list">Responsibilities during service and in temporary positions:
+                                    <li class="experience__list-item">training and education of staff, according to
+                                        the
+                                        specialty;</li>
+                                    <li class="experience__list-item">control over the performance of their
+                                        subordinates;</li>
+                                    <li class="experience__list-item">record keeping;</li>
+                                    <li class="experience__list-item">planning and organization of the work process;
+                                    </li>
+                                    <li class="experience__list-item">management of daily activities of units;</li>
+                                    <li class="experience__list-item">maintaining the moral and psychological condition
+                                        of
+                                        servicemen.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience__inner">
+                        <div class="experience__card anim-items anim-show">
+                            <div class="experience__card-front subtitle flex flex_column">Resolving legal issues<p
+                                    class="subtitle subtitle_mg-top-20">2019-2021</p>
+                            </div>
+                            <div class="experience__card-back experience__text">Worked in resolving legal issues of
+                                servicemen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <div class="wrapper">
+                <h4 class="subtitle education__subtitle" id="education">Education</h4>
+                <div class="education__wrapper flex flex_wrap flex_content-evenly">
+                    <div class="education__inner education__inner_scale anim-items">
+                        <div class="education__circle flex flex_column flex_content-start flex_align-center">
+                            <img class="education__img" src="assets/images/asv-image.png" alt="ASV">
+                            <p>2010-2014</p>
+                            <p class="education__text">Petro
+                                Sagaidachny
+                                Land Forces
+                                Academy</p>
+                        </div>
+                    </div>
+                    <div class="education__inner education__inner_scale anim-items">
+                        <div class="education__circle flex flex_column flex_content-start flex_align-center">
+                            <img class="education__img" src="assets/images/beetroot-image.png" alt="ASV">
+                            <p>2021</p>
+                            <p class="education__text">Beetroot Academy, Front-end
+                                developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="languages">
+            <div class="wrapper">
+                <h4 class="subtitle languages__subtitle" id="languages">Languages</h4>
+                <div class="languages__wrapper flex flex_wrap flex_content-evenly">
+                    <div class="languages__inner">
+                        <div class="languages__card languages__card_ua">
+                            <div class="languages__text">Native</div>
+                        </div>
+                    </div>
+                    <div class="languages__inner">
+                        <div class="languages__card languages__card_ru">
+                            <div class="languages__text">Native</div>
+                        </div>
+                    </div>
+                    <div class="languages__inner">
+                        <div class="languages__card languages__card_usa">
+                            <div class="languages__text">Pre-intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper flex flex_wrap flex_content-between flex_align-center">
+                <div class="logo footer__logo flex">
+                    <a href="#">VD</a>
+                </div>
+                <nav class="nav footer__nav">
+                    <ul class="nav__list flex">
+                        <li class="nav__item"><a class="nav__link" href="#tech-skills">Tech Skills</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#languages">Languages</a></li>
+                    </ul>
+                </nav>
+                <div class="social footer__social flex">
+                    <a class="social__link" href="tel:+380968007509"><img src="assets/icons/phone-icon.png"
+                            alt="phone"></a>
+                    <a class="social__link" href="maitto:Doronin04101993@gmail.com"><img
+                            src="assets/icons/email-icon.png" alt="email"></a>
+                    <a class="social__link" href="https://www.linkedin.com/in/vova-doronin/" target="_blank"><img
+                            src="assets/icons/linkedin-icon.png" alt="linkedin"></a>
+                    <a class="social__link" href="https://github.com/VovaDoronin" target="_blank"><img
+                            src="assets/icons/github-icon.png" alt="github"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="main.js"></script>
 

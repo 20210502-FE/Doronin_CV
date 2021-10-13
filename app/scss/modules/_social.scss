@@ -1,0 +1,31 @@
+.social {
+    padding: 0 25px;
+
+    &__link {
+        height: 25px;
+        width: 25px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+        text-align: center;
+        margin-right: 12px;
+
+        @include respond-to(tablet-landscape) {
+            height: 27px;
+            width: 27px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    img {
+        height: 15px;
+        width: 15px;
+        margin-top: 4px;
+
+        @include respond-to(tablet-landscape) {
+            margin-top: 5px;
+        }
+    }
+}

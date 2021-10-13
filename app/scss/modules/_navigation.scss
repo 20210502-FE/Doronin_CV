@@ -1,0 +1,31 @@
+.nav {
+    padding: 0 25px;
+
+    &__item {
+        font-family: $font-encode-sans-regular, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+
+        @include respond-to(tablet-landscape) {
+            margin-right: 40px;
+            font-size: 14px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__list {
+        @include respond-to(tablet-landscape) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+    }
+}

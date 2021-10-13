@@ -1,0 +1,143 @@
+.summary {
+    padding: 25px 0;
+
+    &_bottom {
+        padding-top: 150px;
+        transition: all 0.7s ease 0s;
+
+        @include respond-to(tablet-portrait) {
+            padding-top: 25px;
+        }
+    }
+
+    &__wrapper {
+        margin: 0 -20px;
+        margin-top: -30px;
+
+        @include respond-to(tablet-portrait) {
+            justify-content: space-between;
+        }
+    }
+
+    &__inner {
+        padding: 0 20px;
+        padding-top: 30px;
+        position: relative;
+
+        @include respond-to(tablet-portrait) {
+            &:nth-child(2) {
+                margin: 0 auto;
+            }
+        }
+
+        @include respond-to(tablet-landscape) {
+            &:nth-child(2) {
+                margin: 0;
+            }
+        }
+
+        @include respond-to(tablet-landscape) {
+            &:nth-child(1) {
+                width: 60%;
+            }
+        }
+
+        @include respond-to(desktop) {
+            &:nth-child(1) {
+                width: 65%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 1px;
+
+        @include respond-to(tablet-portrait) {
+            width: 80%;
+        }
+
+        @include respond-to(desktop) {
+            font-size: 36px;
+            line-height: 40px;
+            width: auto;
+        }
+
+        @include respond-to(midle-desktop) {
+            font-size: 52px;
+        }
+
+        & span {
+            display: inline-block;
+        }
+    }
+
+    &__subtitle {
+        font-size: 19px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        margin-top: 10px;
+
+        @include respond-to(desktop) {
+            font-size: 23px;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+        @include respond-to(midle-desktop) {
+            font-size: 25px;
+        }
+    }
+
+    &__button {
+        height: 40px;
+        width: 130px;
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 14px;
+        cursor: pointer;
+        transition: all 0.7s ease 0s;
+        border: 2px solid $color-blue;
+
+        @include respond-to(midle-desktop) {
+            height: 50px;
+            width: 150px;
+        }
+
+        &:hover {
+            background: $color-azure;
+            transition: 1s ease-in-out;
+            color: $color-black;
+        }
+    }
+
+    &__text {
+        font-size: 11px;
+        line-height: 20px;
+        margin-top: 5px;
+        visibility: hidden;
+        opacity: 0.1;
+        display: none;
+
+        @include respond-to(midle-desktop) {
+            font-size: 13px;
+        }
+
+        &_opened {
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            transition: all 0.7s ease 0s;
+            display: flex;
+        }
+    }
+}
+
+.photo {
+    max-width: 240px;
+
+    @include respond-to(desktop) {
+        max-width: 300px;
+    }
+}
