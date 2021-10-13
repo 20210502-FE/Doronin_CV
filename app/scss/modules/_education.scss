@@ -1,15 +1,15 @@
 .education {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 55px;
     background-color: rgba(54, 49, 63, 0.384);
 
     &__subtitle {
         font-family: $font-encode-sans-bolder, sans-serif;
         font-weight: 900;
-        font-size: 34px;
-        line-height: 34px;
+        font-size: 30px;
+        line-height: 30px;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     &__wrapper {
@@ -34,8 +34,8 @@
     &__circle {
         position: relative;
         cursor: pointer;
-        width: 290px;
-        height: 290px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         border: none;
         background-color: rgba(255, 255, 255, 0.6);
@@ -47,8 +47,8 @@
         text-align: center;
 
         @include respond-to(desktop) {
-            width: 340px;
-            height: 340px;
+            width: 300px;
+            height: 300px;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 
             &::after {
@@ -75,7 +75,7 @@
     }
 
     &__img {
-        height: 100px;
+        height: 50px;
         width: auto;
         margin-top: 30px;
         margin-bottom: 10px;
@@ -85,7 +85,7 @@
         font-family: $font-encode-sans-bold, sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         color: $color-black;
         margin-top: 15px;
     }

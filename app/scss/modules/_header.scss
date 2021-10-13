@@ -1,18 +1,14 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding: 20px 0;
 
     &__wrapper {
         margin: 0 -25px;
         position: relative;
     }
 
-    &__inner {
-        padding: 0 25px;
-    }
-
     &__logo {
         width: 50px;
+        padding: 0 25px;
 
         @include respond-to(desktop) {
             width: 200px;
@@ -28,10 +24,12 @@
         top: 60px;
         right: 70px;
         opacity: 0;
+        z-index: -3;
 
         &_visible {
             opacity: 1;
             transition: all 1.5s ease 0s;
+            z-index: 3;
         }
 
         @include respond-to(tablet-landscape) {
@@ -39,6 +37,7 @@
             top: 0;
             right: 0;
             opacity: 1;
+            z-index: 3;
         }
 
         &-item {
@@ -57,10 +56,12 @@
         top: 60px;
         right: 0;
         opacity: 0;
+        z-index: -3;
 
         &_visible {
             opacity: 1;
             transition: all 1.5s ease 0s;
+            z-index: 3;
         }
 
         @include respond-to(tablet-landscape) {

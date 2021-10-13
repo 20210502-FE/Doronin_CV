@@ -5,12 +5,12 @@
         font-family: $font-encode-sans-regular, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
 
         @include respond-to(tablet-landscape) {
             margin-right: 40px;
-            font-size: 16px;
+            font-size: 14px;
 
             &:nth-last-child(1) {
                 margin-right: 0;

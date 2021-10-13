@@ -55,6 +55,7 @@ body {
   background-image: url(../assets/images/bc-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: auto;
 }
 
 a {
@@ -98,8 +99,8 @@ img {
   font-family: "Encode Sans Expanded Bolder", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 32px;
+  line-height: 32px;
   letter-spacing: -6px;
   color: #ffffff;
 }
@@ -126,8 +127,12 @@ img {
   font-style: normal;
   font-weight: 700;
   color: #ffffff;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.subtitle_mg-top-20 {
+  margin-top: 20px;
 }
 
 .button {
@@ -355,8 +360,7 @@ img {
 }
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0;
 }
 
 .header__wrapper {
@@ -364,12 +368,9 @@ img {
   position: relative;
 }
 
-.header__inner {
-  padding: 0 25px;
-}
-
 .header__logo {
   width: 50px;
+  padding: 0 25px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -389,11 +390,13 @@ img {
   top: 60px;
   right: 70px;
   opacity: 0;
+  z-index: -3;
 }
 
 .header__nav_visible {
   opacity: 1;
   transition: all 1.5s ease 0s;
+  z-index: 3;
 }
 
 @media only screen and (min-width: 900px) {
@@ -402,6 +405,7 @@ img {
     top: 0;
     right: 0;
     opacity: 1;
+    z-index: 3;
   }
 }
 
@@ -422,11 +426,13 @@ img {
   top: 60px;
   right: 0;
   opacity: 0;
+  z-index: -3;
 }
 
 .header__social_visible {
   opacity: 1;
   transition: all 1.5s ease 0s;
+  z-index: 3;
 }
 
 @media only screen and (min-width: 900px) {
@@ -458,14 +464,14 @@ img {
   font-family: "Encode Sans Expanded Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
 }
 
 @media only screen and (min-width: 900px) {
   .nav__item {
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .nav__item:nth-last-child(1) {
     margin-right: 0;
@@ -488,19 +494,18 @@ img {
 }
 
 .social__link {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border: 1px solid #ffffff;
   border-radius: 50px;
   text-align: center;
-  vertical-align: 5px;
   margin-right: 12px;
 }
 
 @media only screen and (min-width: 900px) {
   .social__link {
-    height: 37px;
-    width: 37px;
+    height: 27px;
+    width: 27px;
   }
   .social__link:nth-last-child(1) {
     margin-right: 0;
@@ -508,20 +513,19 @@ img {
 }
 
 .social img {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   margin-top: 4px;
 }
 
 @media only screen and (min-width: 900px) {
   .social img {
-    margin-top: 7px;
+    margin-top: 5px;
   }
 }
 
 .summary {
-  padding-top: 25px;
-  padding-bottom: 35px;
+  padding: 25px 0;
 }
 
 .summary_bottom {
@@ -577,7 +581,7 @@ img {
 }
 
 .summary__title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 40px;
   letter-spacing: 1px;
 }
@@ -590,8 +594,8 @@ img {
 
 @media only screen and (min-width: 1200px) {
   .summary__title {
-    font-size: 46px;
-    line-height: 54px;
+    font-size: 36px;
+    line-height: 40px;
     width: auto;
   }
 }
@@ -608,33 +612,33 @@ img {
 
 .summary__subtitle {
   font-size: 19px;
-  line-height: 44px;
+  line-height: 30px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
   .summary__subtitle {
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 23px;
+    line-height: 30px;
     margin-top: 10px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .summary__subtitle {
-    font-size: 32px;
+    font-size: 25px;
   }
 }
 
 .summary__button {
   height: 40px;
   width: 130px;
-  margin-top: 15px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 15px;
   line-height: 14px;
   cursor: pointer;
-  transition: 1s ease-in-out;
+  transition: all 0.7s ease 0s;
   border: 2px solid #003466;
 }
 
@@ -652,30 +656,30 @@ img {
 }
 
 .summary__text {
-  font-size: 15px;
-  line-height: 25px;
-  margin-top: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  margin-top: 5px;
   visibility: hidden;
   opacity: 0.1;
-  position: absolute;
-  z-index: -1;
+  display: none;
 }
 
 @media only screen and (min-width: 1600px) {
   .summary__text {
-    font-size: 20px;
+    font-size: 13px;
   }
 }
 
-.summary__text_open {
+.summary__text_opened {
   visibility: visible;
   opacity: 1;
-  transition: all 0.7s ease 0s;
   position: relative;
+  transition: all 0.7s ease 0s;
+  display: flex;
 }
 
 .photo {
-  max-width: 280px;
+  max-width: 240px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -742,6 +746,7 @@ img {
   background-color: #000000;
   border-radius: 20px;
   position: relative;
+  transition: 0.7s;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -805,8 +810,8 @@ img {
 .experience__subtitle {
   font-family: "Encode Sans Expanded Bolder", sans-serif;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -820,7 +825,7 @@ img {
 }
 
 .experience__card {
-  height: 505px;
+  height: 350px;
   width: 320px;
   position: relative;
 }
@@ -846,6 +851,7 @@ img {
   background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #000000;
   border-radius: 25px;
+  text-align: center;
 }
 
 .experience__card-back {
@@ -865,13 +871,13 @@ img {
   font-family: "Encode Sans Expanded Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
 }
 
 .experience__text_small {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   margin-top: 10px;
 }
@@ -880,8 +886,8 @@ img {
   font-family: "Encode Sans Expanded Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 13px;
+  line-height: 20px;
   margin-top: 10px;
   margin-left: 3px;
 }
@@ -890,14 +896,14 @@ img {
   font-family: "Encode Sans Expanded Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   list-style: square inside;
   margin-top: 7px;
 }
 
 .education {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 55px;
   background-color: rgba(54, 49, 63, 0.384);
 }
@@ -905,10 +911,10 @@ img {
 .education__subtitle {
   font-family: "Encode Sans Expanded Bolder", sans-serif;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .education__wrapper {
@@ -933,8 +939,8 @@ img {
 .education__circle {
   position: relative;
   cursor: pointer;
-  width: 290px;
-  height: 290px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
@@ -948,8 +954,8 @@ img {
 
 @media only screen and (min-width: 1200px) {
   .education__circle {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   }
   .education__circle::after {
@@ -973,7 +979,7 @@ img {
 }
 
 .education__img {
-  height: 100px;
+  height: 50px;
   width: auto;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -983,21 +989,20 @@ img {
   font-family: "Encode Sans Expanded Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: #000000;
   margin-top: 15px;
 }
 
 .languages {
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 30px 0;
 }
 
 .languages__subtitle {
   font-family: "Encode Sans Expanded Bolder", sans-serif;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 34px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1013,13 +1018,20 @@ img {
 }
 
 .languages__card {
-  height: 200px;
-  width: 300px;
+  height: 170px;
+  width: 250px;
   border-radius: 20px;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+@media only screen and (min-width: 1200px) {
+  .languages__card {
+    height: 200px;
+    width: 310px;
+  }
 }
 
 .languages__card_ua {
@@ -1035,28 +1047,35 @@ img {
 }
 
 .languages__text {
-  height: 200px;
   width: 300px;
   padding-top: 70px;
   position: absolute;
   top: 0;
-  left: 0;
+  right: -20px;
   font-family: "Encode Sans Expanded Bolder", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 19px;
   color: #810202;
   letter-spacing: 0.1em;
   opacity: 0;
+  transition: 0.9s;
+}
+
+@media only screen and (min-width: 1200px) {
+  .languages__text {
+    font-size: 26px;
+    right: 0;
+  }
 }
 
 .languages__text:hover {
   opacity: 1;
+  transition: 0.9s;
 }
 
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   background-color: rgba(54, 49, 63, 0.384);
 }
 
@@ -1064,12 +1083,9 @@ img {
   margin: 0 -25px;
 }
 
-.footer__inner {
-  padding: 0 25px;
-}
-
 .footer__logo {
   width: 50px;
+  padding: 0 25px;
 }
 
 @media only screen and (min-width: 1200px) {

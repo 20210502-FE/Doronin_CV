@@ -5,8 +5,8 @@
     &__subtitle {
         font-family: $font-encode-sans-bolder, sans-serif;
         font-weight: 900;
-        font-size: 34px;
-        line-height: 34px;
+        font-size: 30px;
+        line-height: 30px;
         text-align: center;
     }
 
@@ -20,7 +20,7 @@
     }
 
     &__card {
-        height: 505px;
+        height: 350px;
         width: 320px;
         position: relative;
 
@@ -44,6 +44,7 @@
             background-color: rgba(0, 0, 0, 0.6);
             border: 1px solid $color-black;
             border-radius: 25px;
+            text-align: center;
         }
 
         &-back {
@@ -64,12 +65,12 @@
         font-family: $font-encode-sans-bold, sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 24px;
+        font-size: 15px;
+        line-height: 20px;
         text-align: center;
 
         &_small {
-            font-size: 16px;
+            font-size: 12px;
             line-height: 20px;
             margin-top: 10px;
         }
@@ -79,8 +80,8 @@
         font-family: $font-encode-sans-medium, sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
         margin-top: 10px;
         margin-left: 3px;
 
@@ -88,7 +89,7 @@
             font-family: $font-encode-sans-regular, sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 17px;
             list-style: square inside;
             margin-top: 7px;

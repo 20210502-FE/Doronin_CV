@@ -47,6 +47,7 @@
         background-color: $color-black;
         border-radius: 20px;
         position: relative;
+        transition: 0.7s;
 
         @include respond-to(desktop) {
             height: 220px;

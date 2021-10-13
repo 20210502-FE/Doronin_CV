@@ -1,4 +1,3 @@
-//Ініціалізовуємо констатнти gulp
 const { src, dest, parallel, series, watch } = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
